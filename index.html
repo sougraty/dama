@@ -12,6 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
+    .group-a {
+            border-left: 6px solid #0d6efd;
+        }
+        .group-b {
+            border-left: 6px solid #dc3545;
+        }
+        .phase-finale {
+            border-left: 6px solid #198754;
+        }
+        .match-line {
+            padding: 6px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .card {
+            border-radius: 12px;
+        }
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1d2b64, #f8cdda);
@@ -99,26 +118,100 @@ const players = [
 </div>
 </div>
 
-<!-- TABLEAU DYNAMIQUE -->
-<div class="container">
-<div class="table-container shadow-lg">
-<h3 class="text-center mb-4">📊 Classement Dynamique</h3>
+<div class="container my-5">
 
-<table class="table table-striped text-center" id="scoreTable">
-<thead class="table-dark">
-<tr>
-<th>Joueure</th>
-<th>Points</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+    <h1 class="text-center mb-5">🏁 TOURNOI DE DAMES – RAMADAN 2026</h1>
+    <h2 class="text-center mb-5">arbitrage par baba AHMED, local ZAWYA</h2>
+    <div class="row g-4">
+
+        <!-- GROUPE A -->
+        <div class="col-md-6">
+            <div class="card p-4 group-a shadow-sm">
+                <h2 class="text-primary">🔵 GROUPE A</h2>
+                <p><strong>Ilyas Ben aazi – Abderahim Lbrehmi – Abdeljalil Ben aazi – Abdeljalil Sougraty</strong></p>
+
+                <h5 class="mt-4">Matchs :</h5>
+                <div class="match-line">Ilyas Ben aazi vs Abderahim Lbrehmi →  4 - 0 </div>
+                <div class="match-line">Ilyas Ben aazi vs Abdeljalil Ben aazi → ______</div>
+                <div class="match-line">Ilyas Ben aazi vs Abdeljalil Sougraty → ______</div>
+                <div class="match-line">Abderahim Lbrehmi vs Abdeljalil Ben aazi → ______</div>
+                <div class="match-line">Abderahim Lbrehmi vs Abdeljalil Sougraty → ______</div>
+                <div class="match-line">Abdeljalil Ben aazi vs Abdeljalil Sougraty → ______</div>
+
+                <h5 class="mt-4">Classement Groupe A</h5>
+                <table class="table table-bordered text-center">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Joueure</th>
+                            <th>Victoires</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ilyas Ben aazi</td><td>1</td><td>1</td></tr>
+                        <tr><td>Abderahim Lbrehmi</td><td></td><td></td></tr>
+                        <tr><td>Abdeljalil Ben aazi</td><td></td><td></td></tr>
+                        <tr><td>Abdeljalil Sougraty</td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+
+                <p class="small">
+                    👉 1 victoire = 1 point <br>
+                    👉 Les 2 premières se qualifient
+                </p>
+            </div>
+        </div>
+
+        <!-- GROUPE B -->
+        <div class="col-md-6">
+            <div class="card p-4 group-b shadow-sm">
+                <h2 class="text-danger">🔴 GROUPE B</h2>
+                <p><strong>Yassin Bouzid – Said Skip – Hassan Sougraty – Dris Oukhlifa</strong></p>
+
+                <h5 class="mt-4">Matchs :</h5>
+                <div class="match-line">Yassin Bouzid vs Said Skip → ______</div>
+                <div class="match-line">Yassin Bouzid vs Hassan Sougraty → ______</div>
+                <div class="match-line">Yassin Bouzid vs Dris Oukhlifa → ______</div>
+                <div class="match-line">Said Skip vs Hassan Sougraty → ______</div>
+                <div class="match-line">Said Skip vs Dris Oukhlifa → ______</div>
+                <div class="match-line">Hassan Sougraty vs Dris Oukhlifa → ______</div>
+
+                <h5 class="mt-4">Classement Groupe B</h5>
+                <table class="table table-bordered text-center">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Joueure</th>
+                            <th>Victoires</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Yassin Bouzid</td><td></td><td></td></tr>
+                        <tr><td>Said Skip</td><td></td><td></td></tr>
+                        <tr><td>Hassan Sougraty</td><td></td><td></td></tr>
+                        <tr><td>Dris Oukhlifa</td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PHASE FINALE -->
+    <div class="card p-4 shadow-sm mt-5 phase-finale">
+        <h2 class="text-success">🔥 PHASE FINALE</h2>
+
+        <h5 class="mt-4">Demi-finales</h5>
+        <div class="match-line">1ère Groupe A vs 2ème Groupe B → ______</div>
+        <div class="match-line">1ère Groupe B vs 2ème Groupe A → ______</div>
+
+        <h5 class="mt-4">Finale</h5>
+        <div class="match-line">
+            Gagnantes des demi-finales → 🏆 Championne : ______
+        </div>
+    </div>
 
 </div>
-</div>
-
 <!-- FOOTER -->
 <footer class="text-center text-white">
 <div class="container">
@@ -132,59 +225,7 @@ Votre esprit sportif rend ce moment inoubliable.
 </div>
 </footer>
 
-<!-- JS -->
-<script>
-// Générer cartes joueuses
-const row = document.querySelector(".row");
-players.forEach(name => {
-    row.innerHTML += `
-    <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card player-card shadow">
-            <img src="https://via.placeholder.com/300" class="card-img-top">
-            <div class="card-body text-center">
-                <h5>${name}</h5>
-                <span class="badge bg-primary">Participante</span>
-            </div>
-        </div>
-    </div>`;
-});
-
-// Générer tableau dynamique
-const tableBody = document.querySelector("#scoreTable tbody");
-
-let scores = players.map(p => ({name: p, points: 0}));
-
-function renderTable() {
-    tableBody.innerHTML = "";
-    scores.sort((a,b)=>b.points - a.points);
-    
-    scores.forEach((player, index) => {
-        tableBody.innerHTML += `
-        <tr>
-            <td>${player.name} ${index===0 && player.points>0 ? '<span class="badge bg-warning text-dark badge-winner">👑 Leader</span>' : ''}</td>
-            <td>${player.points}</td>
-            <td>
-                <button class="btn btn-success btn-sm" onclick="addPoint('${player.name}')">+1</button>
-                <button class="btn btn-danger btn-sm" onclick="removePoint('${player.name}')">-1</button>
-            </td>
-        </tr>`;
-    });
-}
-
-function addPoint(name){
-    scores.find(p=>p.name===name).points++;
-    renderTable();
-}
-
-function removePoint(name){
-    let player = scores.find(p=>p.name===name);
-    if(player.points>0) player.points--;
-    renderTable();
-}
-
-renderTable();
-</script>
-
 </body>
 </html>
+
 
